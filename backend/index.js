@@ -10,7 +10,8 @@ dotenv.config();
 
 const app = express();
 app.use(cors());
-app.use(express.json({extended: true}));
+app.use(express.json({ extended: true }));
+
 
 app.listen(process.env.PORT, () => {
   connectDB();
